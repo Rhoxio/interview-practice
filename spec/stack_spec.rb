@@ -20,7 +20,7 @@ RSpec.describe Stack do
         expect(new_stack.head).to eq(node)
       end
 
-      it "will not accept other object types outside if LinkedListNode" do 
+      it "will not accept other object types outside of LinkedListNode" do 
         oof = 'oof'
         expect{Stack.new(oof)}.to raise_error(ArgumentError)
       end
@@ -91,7 +91,9 @@ RSpec.describe Stack do
 
       it "will retain reverse ordering" do 
         @filled_stack.reverse!
-        3.times {@filled_stack.pop}
+        expect(@filled_stack.pop).to eq(1)
+        expect(@filled_stack.pop).to eq(2)
+        expect(@filled_stack.pop).to eq(3)
         expect(@filled_stack.pop).to eq(nil)
       end
 
