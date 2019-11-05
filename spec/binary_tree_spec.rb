@@ -10,9 +10,9 @@ RSpec.describe BinaryTree do
     # 
     #             8
     #         5      9
-    #      2     6
-    #    1   4  n  7
-    #   n n n      
+    #      2     6   
+    #    1   4     7
+    #          
     # 
   end
 

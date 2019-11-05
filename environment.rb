@@ -1,6 +1,1 @@
-require_relative 'lib/stack'
-require_relative 'lib/queue'
-require_relative 'lib/linked_list'
-require_relative 'lib/linked_list_node'
-require_relative 'lib/binary_tree'
-require_relative 'lib/binary_tree_node'
+Dir[File.join(__dir__, 'lib', '*.rb')].each { |file| require file }

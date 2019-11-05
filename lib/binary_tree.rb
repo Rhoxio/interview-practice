@@ -43,9 +43,7 @@ class BinaryTree
   end
 
   def breadth_first_search(node = @head, term)
-    queue = [] 
-    queue.push(node)
-
+    queue = [node] 
     until(queue.empty?)
       current = queue.shift
       return current if current.data == term
